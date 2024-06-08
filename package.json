@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "npx ts-node src/app.ts",
-    "console": "npx ts-node src/console.ts",
+    "dev": "npx --node-options='--max-http-header-size=80000' ts-node src/app.ts",
+    "console": "npx --node-options='--max-http-header-size=80000' ts-node src/console.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
